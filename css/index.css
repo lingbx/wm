@@ -1,4 +1,4 @@
-/* 1．顶部 */
+/*============== 1．顶部 ==============*/
 
 
 /* 顶部容器 */
@@ -18,7 +18,7 @@
 }
 
 
-/* 里面的p标签 */
+/* p标签*/
 
 .topbar .container p {
     height: 28px;
@@ -27,14 +27,14 @@
 }
 
 
-/* 第一个p标签下的a标签 */
+/* 第一个p标签 */
 
 .topbar .container p:first-child {
     text-indent: 210px;
 }
 
 
-/* 第二个p标签 */
+/* 第一个p标签下的a标签 */
 
 .topbar .container p:first-child a {
     color: #fff;
@@ -56,31 +56,27 @@
 }
 
 
-/* 2．导航 */
+/* 2．==============导航============== */
 
 .nav {
     height: 80px;
     background-color: #fff;
 }
-
+/* 搜索栏下面红框 */
 .nav .search-shpcart-order {
     margin-top: 5px;
     height: 35px;
 }
 
-.nav .category-menu {
-    margin-top: 15px;
-    height: 30px;
-    background-color: red;
-}
 
+/* 搜索框 */
 .nav .search-shpcart-order .search-input {
     width: 440px;
     height: 35px;
     background-color: #ff6700;
     margin-right: 38px;
 }
-
+/* 购物车图片 */
 .nav .search-shpcart-order .search-input span {
     display: inline-block;
     width: 45px;
@@ -89,7 +85,7 @@
     background-image: url(../img/img/bgicon.png);
     background-position: -3px 0px;
 }
-
+/* 搜索框橙色部分 */
 .nav .search-shpcart-order .search-input .search {
     width: 390px;
     height: 31px;
@@ -98,14 +94,14 @@
     color: #ccc;
     outline: none;
 }
-
+/* 我的订单下面粉色部分 */
 .nav .search-shpcart-order .shopcart-order {
-    width: 200px;
+    width: 200x;
     height: 35px;
     background-color: pink;
     font-size: 0;
 }
-
+/* 购物车,我的订单按钮 */
 .nav .search-shpcart-order .shopcart-order button {
     width: 100px;
     height: 35px;
@@ -113,7 +109,7 @@
     border: 1px solid #ccc;
     font-size: 12px;
 }
-
+/* 购物车图标设置及按钮区域颜色和文本颜色 */
 .nav .search-shpcart-order .shopcart-order button:nth-child(1) {
     background-color: #ff6700;
     color: #fff;
@@ -121,73 +117,153 @@
     background-repeat: no-repeat;
     background-position: -6px -44px;
 }
-
-
-/* 3．分类导航和banner */
-
-.menu {
-    height: 500px;
-    background-color: #333;
+/* 分类导航 */
+.nav .category-menu {
+    margin-top: 15px;
+    height: 30px;
+}
+.left-logo{
+	width: 200px;
+	height: 30px;
+	
+}
+/* 乐购图片 */
+.logo{
+	position: absolute;
+	top: 0px;
+	left: 137px;
+}
+/* 导航栏 */
+.category-menu ul{
+	width: 1000px;
+	height: 30px;
+	
+}
+/* 导航文字 */
+.category-menu ul li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 80px;
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 700;
 }
 
 
-/* 4．今日推荐 */
-
+/* ==============3．分类导航和banner============== */
+.menu {
+    height: 438px;
+    background-color: #333;
+}
+.sideMenu{
+	height: 430px;
+	width: 200px;
+	background-color: red;
+}
+.sideMenu ul{
+	height: 430px;
+	width: 200px;
+	background-color: #f3f3f3;
+	position: relative;
+}
+.sideMenu ul li{
+	height: 30px;
+	line-height: 30px;
+	width:200px ;
+	text-indent: 20px;
+}
+.sideMenu ul li a{
+	color: #353535;
+	text-decoration: none ;
+}
+.menu .sideMenu ul li a:hover{
+	color: #ff6700;
+}
+.sideMenu ul li:hover{
+	background-color:#fff ;
+}
+.sideMenu ul li:hover a{
+	color: #ff6700;
+}
+.menu .sideMenu ul li:hover .title{
+	background-color: #fff;
+	position:absolute;
+	z-index: 99;
+}
+.menu .sideMenu ul li:hover .subMenu{
+	display: block;
+}
+.menu .sideMenu ul li .title{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+}
+.sideMenu ul li .subMenu{
+	position: absolute;
+	left: 198px;
+	top: 0;
+	border: 2px solid #ff6700;
+	width: 500px;
+	height: 428px;
+	display:none ;
+}
+.banner{
+	height: 430px;
+	width: 1000px;
+	background-color: #fff;
+}
+.
+/*============== 4．今日推荐============== */
 .recommend {
     height: 500px;
     background-color: #ccc;
 }
 
-
-/* 5．电子书 */
+/*============== 5．电子书============== */
 
 .ebooks {
     height: 500px;
     background-color: #333;
 }
 
-
-/* 6．服装 */
+/* ==============6．服装 ==============*/
 
 .clothes {
     height: 500px;
     background-color: #ccc;
 }
 
-
-/* 7．户外运动 */
+/*============== 7．户外运动 ==============*/
 
 .sport {
     height: 500px;
     background-color: #333;
 }
 
-
-/* 8．童装 */
+/* ==============8．童装 ==============*/
 
 .children-clothes {
     height: 500px;
     background-color: #ccc;
 }
 
-
-/* 9．家居日用 */
+/* ==============9．家居日用============== */
 
 .daily {
     height: 500px;
     background-color: #333;
 }
 
-
-/* 10．推广商品 */
+/* ==============10．推广商品============== */
 
 .promotion {
     height: 500px;
     background-color: #ccc;
 }
 
-
-/* 11．尾部 */
+/*============== 11．尾部============== */
 
 .footer {
     height: 500px;
